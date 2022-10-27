@@ -12,3 +12,5 @@
 - I also tried flexbox to create the grid which is also a nice solution
 
 - You can also accomplish this by using CSS-Grid (Which I didnt try)
+
+- I learned the Usecase for Event Delegation: https://davidwalsh.name/event-delegate
