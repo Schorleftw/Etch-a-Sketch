@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid red; */
+}
+
+body, html {
+    height: 100%;
+}
+
+/* Solution using float/clear */
+/* div {
+    float: left;
+    padding: 20px;
+    border: 1px solid;
+}
+
+#grid {
+    width: 672px;
+    content: "";
+    clear: both;
+    display: table;
+} */
+
+
+/* Solution using flexbox */
+
+.header {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #wrapper {
+
+} */
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    height: 672px;
+    width: 672px;
+    /* border: 1px solid; */
+}
+
+div:not(#wrapper,#grid,.header,.footer) {
+    padding: 20px;
+    border: 1px solid;
+    /* flex-grow: none; */
+    flex: 1;
+}
+
+.footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    height: 5%;
+    width: 100%;
+}
