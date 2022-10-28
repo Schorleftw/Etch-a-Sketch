@@ -7,10 +7,12 @@
 - The CSS clear property is used for specifyng what should happen with the element that is next to a floating element.
 - If a floated Element is taller than the containing element, it will "overflow" outside of its container. This can be solved using the clearfix hack.
 
-- To create the grid I also tried to use inline-block but the solution is not as clean as it is with float/clear
+- To create the grid I also tried to use inline-block but the solution is not as clean as it is with float/clear or css grid
 
 - I also tried flexbox to create the grid but came to the conclusion that CSS Grid is way better for this project
 
 - I learned CSS Grid for this project. I mainly used CSS flexbox before.
 
-- I learned the Usecase for Event Delegation: https://davidwalsh.name/event-delegate
+- I learned the Usecases for Event Delegation: https://davidwalsh.name/event-delegate
+
+- I learned CSS variables
