@@ -1,3 +1,11 @@
+/* Defining CSS Variables */
+:root {
+    --column-number: 10;
+    --column-width: 1fr;
+    --row-number: 10;
+    --row-width: 1fr;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,21 +16,6 @@ body, html {
     height: 100%;
 }
 
-/* Solution using float/clear */
-/* div {
-    float: left;
-    padding: 20px;
-    border: 1px solid;
-}
-
-#grid {
-    width: 672px;
-    content: "";
-    clear: both;
-    display: table;
-} */
-
-
 /* Solution using flexbox */
 
 .header {
@@ -32,24 +25,23 @@ body, html {
     align-items: center;
 }
 
-/* #wrapper {
-    In case I need a parent container for #grid
-} */
-
-#grid {
+#wrapper {
     display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    height: 672px;
-    width: 672px;
-    /* border: 1px solid; */
+    justify-content: center;
+    align-items: center;
 }
 
-div:not(#wrapper,#grid,.header,.footer) {
-    padding: 20px;
+#grid {
+    display: grid;
+    grid-template-columns: repeat(var(--column-number), var(--column-width));
+    grid-template-rows: repeat(var(--row-number), var(--row-width));
+    height: 500px;
+    width: 500px;
     border: 1px solid;
-    /* flex-grow: none; */
-    flex: 1;
+}
+
+.box {
+    border: 1px solid;
 }
 
 .footer {
