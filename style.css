@@ -16,13 +16,19 @@ body, html {
     height: 100%;
 }
 
-/* Solution using flexbox */
+body {
+    background-color: #5A236C;
+    background-image: linear-gradient(to bottom right, #392270, #E9275B);
+}
+
+/* Solution using flexbox and grid */
 
 .header {
     height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 #wrapper {
@@ -34,6 +40,7 @@ body, html {
 }
 
 #grid {
+    background: white;
     display: grid;
     grid-template-columns: repeat(var(--column-number), var(--column-width));
     grid-template-rows: repeat(var(--row-number), var(--row-width));
@@ -43,6 +50,7 @@ body, html {
 }
 
 #wrapper .slider {
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,10 +62,12 @@ body, html {
 }
 
 .footer {
+    color: white;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     position: absolute;
+    border-top: 4px solid black;
     bottom: 0;
     height: 5%;
     width: 100%;
