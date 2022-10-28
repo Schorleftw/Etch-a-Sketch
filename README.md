@@ -9,8 +9,8 @@
 
 - To create the grid I also tried to use inline-block but the solution is not as clean as it is with float/clear
 
-- I also tried flexbox to create the grid which is also a nice solution
+- I also tried flexbox to create the grid but came to the conclusion that CSS Grid is way better for this project
 
-- You can also accomplish this by using CSS-Grid (Which I didnt try)
+- I learned CSS Grid for this project. I mainly used CSS flexbox before.
 
 - I learned the Usecase for Event Delegation: https://davidwalsh.name/event-delegate
